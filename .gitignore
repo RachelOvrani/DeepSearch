@@ -9,6 +9,9 @@
 /.project
 /.settings/
 
+# index files
+index/
+
 # Logs and temporary files
 *.log
 *.tmp
