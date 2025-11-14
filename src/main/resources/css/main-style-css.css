@@ -1,0 +1,63 @@
+/* MainLayout.css - עיצוב לפריסה הראשית של האפליקציה */
+
+.root-layout {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f2f6f9;
+}
+
+/* עיצוב SplitPane ראשי (אנכי) */
+.main-split-pane {
+    -fx-background-color: #f2f6f9;
+    -fx-padding: 0;
+}
+
+/* עיצוב SplitPane משני (אופקי) */
+.horizontal-split-pane {
+    -fx-background-color: #f2f6f9;
+    -fx-padding: 0;
+}
+
+/* מחיצות (Dividers) */
+.main-split-pane > .split-pane-divider {
+    -fx-background-color: #bed7ec;
+    -fx-padding: 1px;
+}
+
+.horizontal-split-pane .split-pane-divider {
+    -fx-background-color: #bed7ec; /* צבע גבול */
+    -fx-padding: 0;
+    -fx-pref-width: 4px;
+    -fx-max-width: 4px;
+    -fx-min-width: 4px;
+    -fx-cursor: default; /* סמן רגיל – לא מאפשר הזזה */
+}
+
+
+/* עיצוב למחיצה בין PreviewPane לחלק העליון */
+.main-split-pane > .split-pane-divider:hover {
+    -fx-background-color: #92bddf;
+    -fx-padding: 1px;
+    -fx-cursor: v-resize;
+}
+
+/* עיצוב למחיצה בין FilterPane לResultsPane */
+.horizontal-split-pane > .split-pane-divider:hover {
+    -fx-background-color: #92bddf;
+    -fx-padding: 1px;
+    -fx-cursor: h-resize;
+}
+
+/* מיכל עליון (SearchPane) */
+.top-section {
+    -fx-background-color: #f2f6f9;
+    -fx-padding: 0;
+    -fx-min-height: 100px;
+    -fx-pref-height: 100px;
+}
+
+/* אזור התוכן המרכזי */
+.content-area {
+    -fx-background-color: #f2f6f9;
+    -fx-padding: 0;
+}

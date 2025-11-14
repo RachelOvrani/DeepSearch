@@ -1,0 +1,101 @@
+/* FilterPane.css - עיצוב לקומפוננטת הסינון */
+
+.filter-pane {
+    -fx-background-color: #f2f6f9;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+    -fx-node-orientation: right-to-left;
+}
+
+.filter-container {
+    -fx-background-color: white;
+    -fx-border-color: #bed7ec;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 15px;
+    -fx-spacing: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 5, 0, 0, 1);
+}
+
+.filter-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-fill: #172b4d;
+    -fx-padding: 0 0 5px 0;
+}
+
+.filter-section {
+    -fx-spacing: 8px;
+}
+
+.filter-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #172b4d;
+     -fx-padding: 10 0 0 0;
+}
+
+.radio-button {
+    -fx-text-fill: #172b4d;
+    -fx-font-size: 13px;
+}
+
+.radio-button .radio {
+    -fx-border-color: #bed7ec;
+    -fx-border-radius: 50%;
+    -fx-border-width: 1px;
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color: #5195cb;
+    -fx-background-insets: 0;
+}
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #bed7ec;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-padding: 2px;
+}
+
+.combo-box:focused {
+    -fx-border-color: #92bddf;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #172b4d;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 5px 8px;
+    -fx-text-fill: #172b4d;
+}
+
+.reset-button {
+    -fx-background-color: #d3e5f2;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #172b4d;
+    -fx-font-weight: normal;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.reset-button:hover {
+    -fx-background-color: #bed7ec;
+}
+
+/* גודל מוגדר לפי הטבלה בתוצאות */
+.filter-container-height {
+    -fx-min-height: 300px; /* גובה מינימלי התואם את הטבלה */
+    -fx-pref-height: 300px;
+}

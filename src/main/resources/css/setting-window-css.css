@@ -1,0 +1,190 @@
+
+
+.settings-window {
+    -fx-background-color: white;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-node-orientation: right-to-left;
+}
+
+.settings-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #172b4d;
+    -fx-text-alignment: right;
+    -fx-alignment: center-right;
+    -fx-node-orientation: right-to-left;
+    -fx-padding: 0 0 10px 0;
+}
+
+.section-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #172b4d;
+    -fx-text-alignment: right;
+    -fx-alignment: center-right;
+    -fx-node-orientation: right-to-left;
+    -fx-padding: 0 0 5px 0;
+}
+
+/* ScrollPane לכוננים */
+.drives-scroll {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #bed7ec;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-padding: 0;
+}
+
+.drives-scroll .viewport {
+    -fx-background-color: white;
+}
+
+.drives-scroll .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 1;
+}
+
+.drives-scroll .scroll-bar:vertical .thumb {
+    -fx-background-color: #bed7ec;
+    -fx-background-radius: 5px;
+}
+
+.drives-scroll .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #92bddf;
+}
+
+.drives-scroll .scroll-bar:vertical .track {
+    -fx-background-color: #f2f6f9;
+    -fx-background-radius: 5px;
+}
+
+/* מכולת הכוננים */
+.drives-container {
+    -fx-background-color: white;
+    -fx-spacing: 8px;
+}
+
+/* פריט כונן */
+.drive-item {
+    -fx-background-color: white;
+    -fx-border-color: #d3e5f2;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 6px 12px;
+    -fx-spacing: 10px;
+    -fx-alignment: center-right;
+    -fx-node-orientation: right-to-left;
+}
+
+.drive-item:hover {
+    -fx-background-color: #f2f6f9;
+}
+
+/* Checkbox לכונן */
+.drive-checkbox {
+    -fx-text-fill: #172b4d;
+    -fx-font-size: 13px;
+}
+
+.drive-checkbox .box {
+    -fx-background-color: white;
+    -fx-border-color: #bed7ec;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+.drive-checkbox:selected .box {
+    -fx-background-color: #5195cb;
+    -fx-border-color: #5195cb;
+}
+
+.drive-checkbox:selected .mark {
+    -fx-background-color: white;
+}
+
+.drive-checkbox:hover .box {
+    -fx-border-color: #92bddf;
+}
+
+/* תווית כונן */
+.drive-label {
+    -fx-text-fill: #172b4d;
+    -fx-font-size: 13px;
+    -fx-alignment: center-right;
+    -fx-text-alignment: right;
+    -fx-node-orientation: right-to-left;
+}
+
+/* אייקון כונן */
+.drive-icon {
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+}
+
+/* כפתורים ראשיים */
+.primary-button {
+    -fx-background-color: #5195cb;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 8px 20px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.primary-button:hover {
+    -fx-background-color: #92bddf;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #bed7ec;
+}
+
+.primary-button:disabled {
+    -fx-background-color: #bed7ec;
+    -fx-text-fill: #92bddf;
+    -fx-cursor: default;
+}
+
+.secondary-button {
+    -fx-background-color: #d3e5f2;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #172b4d;
+    -fx-font-weight: normal;
+    -fx-font-size: 12px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-border-color: #bed7ec;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #bed7ec;
+    -fx-border-color: #92bddf;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: #92bddf;
+}
+
+/* מפרידים */
+.separator .line {
+    -fx-border-color: #d3e5f2;
+    -fx-border-width: 1px 0 0 0;
+}
+
+/* אפקטים כלליים */
+.settings-window * {
+    -fx-cursor: default;
+}
+
+.primary-button, .secondary-button {
+    -fx-cursor: hand;
+}

@@ -1,0 +1,138 @@
+/* ResultsPane.css - עיצוב לקומפוננטת התוצאות עם תיקון לשורה נבחרת */
+
+.results-pane {
+    -fx-background-color: #f2f6f9;
+    -fx-padding: 15px;
+}
+
+.results-table {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #bed7ec;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-padding: 0;
+    -fx-fixed-cell-size: 30px; /* גובה קבוע לשורות */
+}
+
+.results-table .column-header-background {
+    -fx-background-color: #92bddf;
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-padding: 0;
+}
+
+.results-table .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-text-fill: #172b4d;
+    -fx-padding: 10px;
+    -fx-border-color: #5195cb;
+    -fx-border-width: 0 0 1 0;
+}
+
+.results-table .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: #d3e5f2;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 5px 0;
+}
+
+.results-table .table-row-cell:odd {
+    -fx-background-color: #f2f6f9;
+}
+
+.results-table .table-row-cell:selected {
+    -fx-background-color: #bed7ec;
+}
+
+.results-table .table-row-cell:hover {
+    -fx-background-color: #d3e5f2;
+}
+
+/* זה הסלקטור הנכון לשינוי צבע הטקסט בתאים */
+.results-table .table-cell {
+    -fx-alignment: center-left;
+    -fx-padding: 8px 10px;
+    -fx-text-fill: #172b4d;
+    -fx-font-size: 13px;
+    -fx-border-width: 0;
+}
+
+
+/* עיצוב למכולת שם קובץ עם אייקון */
+.name-icon-cell {
+    -fx-alignment: center-left;
+    -fx-spacing: 5px;
+}
+
+/* עיצוב לתווית של שם הקובץ */
+.file-name {
+    -fx-font-size: 13px;
+    -fx-text-fill: #172b4d;
+}
+
+
+
+/* מונה תוצאות */
+.status-bar {
+    -fx-padding: 10px 5px 5px 5px;
+    -fx-background-color: transparent;
+}
+
+.count-label {
+    -fx-text-fill: #172b4d;
+    -fx-font-size: 12px;
+}
+
+/* סרגל גלילה בטבלה */
+.results-table .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 1;
+}
+
+.results-table .scroll-bar:vertical .thumb {
+    -fx-background-color: #bed7ec;
+    -fx-background-radius: 5px;
+}
+
+.results-table .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #92bddf;
+}
+
+.context-menu {
+    -fx-background-color: #f2f6f9;
+    -fx-background-radius: 5px;
+    -fx-border-color: #bed7ec;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(70, 100, 140, 0.15), 5, 0, 0, 2);
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    -fx-text-fill: #172b4d;
+}
+
+/* עיצוב בסיסי של פריט בתפריט - זה הסטייל הרגיל */
+.context-menu .menu-item {
+    -fx-padding: 6px 20px 6px 20px;
+    -fx-text-fill: #172b4d;
+    -fx-font-weight: 400;
+}
+
+
+
+/*!* עיצוב לפריטים מבוטלים *!*/
+/*.context-menu .menu-item:disabled {*/
+/*    -fx-text-fill: #9aa5b1;*/
+/*    -fx-opacity: 0.7;*/
+/*}*/
+
+/*!* מפריד בין פריטים *!*/
+/*.context-menu .separator {*/
+/*    -fx-background-color: #d3e5f2;*/
+/*    -fx-padding: 0;*/
+/*    -fx-pref-height: 1px;*/
+/*    -fx-opacity: 0.8;*/
+/*    -fx-margin: 3 0 3 0;*/
+/*}*/

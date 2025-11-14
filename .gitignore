@@ -1,0 +1,28 @@
+# Maven target directory
+/target/
+/out/
+
+# IDE files (IntelliJ IDEA)
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Compiled class files
+*.class
+
+# Configuration files that may contain sensitive info
+config.properties
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# presentation
+*.pptx
